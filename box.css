@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  color: antiquewhite;
+  text-decoration: solid;
+  font-size: 25px;
+}
+
+.container {
+  background-image: url("/top-view-food-frame-with-copy-space.jpg");
+  background-color: #cccccc;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: grid;
+  height: 100vh;
+  grid-template-areas:
+    "navbar"
+    "content"
+    "contact";
+  grid-template-rows: 100px 1fr 100px;
+}
+.navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: rgba(128, 128, 128, 0.2);
+}
+.navbar img {
+  height: 50px;
+  width: 50px;
+  margin-left: 300px;
+  margin-right: 20px;
+}
+.navbar span {
+  margin-right: 300px;
+  font-size: 35px;
+}
+
+.dropbtn{
+  background-color: transparent;
+  color: antiquewhite;
+  padding: 16px;
+  font-size: 25px;
+  border: none;
+  border-radius: 8px;
+  font-style: bold;
+}
+
+.Menu {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content
+ {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+
+.dropdown-content a {
+  color: antiquewhite;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(128, 128, 128, 0.7);
+}
+
+.Menu:hover .dropdown-content {
+  display: block;
+}
+
+
+.Menu:hover .dropbtn {
+  background-color: transparent;
+}
+.content{
+    background-color: blue;
+    position:absolute;
+    left: 1000px;
+    top:300px;
+    height: 500px;
+    width: 500px;
+    border-radius: 100px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+
+}
