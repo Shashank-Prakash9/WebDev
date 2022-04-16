@@ -9,19 +9,21 @@
   <body>
     <input type="text" id="first_num" placeholder="first_num" />
     <input type="text" id="second_num" placeholder="second_num" />
-    <span id="op1"></span>
+
     <button
-      onclick="max(document.getElementById('first_num'),document.getElementById('second_num'))"
+      onclick="max(document.getElementById('first_num').value,document.getElementById('second_num').value)"
       id="max"
     >
-      Submit
-    </button>
+      Submit</button
+    ><br />
+    <span>Maximum of two numbers is : </span><output id="op1"></output>
     <script type="text/javascript">
       function max(first_num, second_num) {
         if (first_num > second_num) {
           console.log(first_num);
-          document.getElementById("op1").innerHTML.value = first_num;
+          document.getElementById("op1").innerHTML = first;
         } else {
+          console.log(second_num);
           document.getElementById("op1").innerHTML = second_num;
         }
         return;
