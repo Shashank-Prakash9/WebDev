@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="first_num" placeholder="first_num" autocomplete="off"/>
+    <input type="text" id="second_num" placeholder="second_num" autocomplete="off" />
+    <input type="text" id="third_num" placeholder="third_num" autocomplete="off" />
+
+    <button
+      onclick="maxOfThree(document.getElementById('first_num').value,document.getElementById('second_num').value,document.getElementById('third_num').value)"
+      id="max"
+    >
+      Submit</button
+    ><br />
+    <span>Maximum of three numbers is : </span><output id="op1"></output>
+    <script type="text/javascript">
+      function maxOfThree(first_num, second_num, third_num) {
+        var max = Math.max(first_num, second_num, third_num);
+        document.getElementById("op1").innerHTML = max;
+
+        return;
+      }
+    </script>
+  </body>
+</html>

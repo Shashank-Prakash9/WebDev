@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <span>Enter a character : </span>
+    <input type="text" id="ip1" size="1" autocomplete="off" />
+    <button onclick="vowel(document.getElementById('ip1').value)">Submit</button
+    ><br />
+    <output id="op1"></output>
+    <script>
+      function vowel(char) {
+        switch (char) {
+          case "a":
+          case "e":
+          case "i":
+          case "o":
+          case "u":
+          case "A":
+          case "E":
+          case "I":
+          case "O":
+          case "U":
+            document.getElementById("op1").innerHTML = char + " is a vowel";
+            break;
+          default:
+            document.getElementById("op1").innerHTML = char + " is not a vowel";
+            break;
+        }
+      }
+    </script>
+  </body>
+</html>
