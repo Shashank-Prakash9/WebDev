@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <span>Input Array Elements</span>
+    <form class="" action="index.html" method="post">
+      <input type="text" name="array[]" value="" /><br />
+      <button type="button" name="button" onclick="Sum()">Sum</button>
+      <button type="button" name="button" onclick="Multiply()">Product</button>
+    </form>
+    <br />
+
+    <p>The Output is : <output id="op"></output></p>
+
+    <script type="text/javascript">
+      function Sum() {
+        var input = document.getElementsByName("array[]");
+        var a = 0;
+        for (var i = 0; i < input.length; i++) {
+          a += parseInt(input[i]);
+        }
+
+        document.getElementById("op").innerHTML = a;
+      }
+      function Multiply() {
+        var input = document.getElementsByName("array[]");
+        var a = 1;
+        console.log(input);
+        for (var i = 0; i < input.length; i++) {
+          a *= parseInt(input[i]);
+        }
+
+        document.getElementById("op").innerHTML = a;
+      }
+    </script>
+  </body>
+</html>
