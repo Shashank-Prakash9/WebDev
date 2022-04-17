@@ -6,7 +6,7 @@
 }
 
 .container {
-  background-image: url("https://github.com/Shashank-Prakash9/WebDev/blob/master/top-view-food-frame-with-copy-space.jpg");
+  background-image: url("images/top-view-food-frame-with-copy-space.jpg");
   background-color: #cccccc;
 
   background-position: center;
@@ -38,7 +38,7 @@
   font-size: 35px;
 }
 
-.dropbtn{
+.dropbtn {
   background-color: transparent;
   color: antiquewhite;
   padding: 16px;
@@ -53,8 +53,7 @@
   display: inline-block;
 }
 
-.dropdown-content
- {
+.dropdown-content {
   display: none;
   position: absolute;
   background-color: transparent;
@@ -62,7 +61,6 @@
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
-
 
 .dropdown-content a {
   color: antiquewhite;
@@ -79,21 +77,19 @@
   display: block;
 }
 
-
 .Menu:hover .dropbtn {
   background-color: transparent;
 }
-.content{
-    background-color: blue;
-    position:absolute;
-    left: 1000px;
-    top:300px;
-    height: 500px;
-    width: 500px;
-    border-radius: 100px 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 30px;
-
+.content {
+  background-color: blue;
+  position: absolute;
+  left: 1000px;
+  top: 300px;
+  height: 500px;
+  width: 500px;
+  border-radius: 100px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 30px;
 }
