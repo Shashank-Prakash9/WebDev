@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    Enter a 4 digit number <input type="number" size="4" id="ip" />
+    <button onclick="validate(document.getElementById('ip').value)">
+      Validate
+    </button>
+    <script type="text/javascript">
+      function validate(num1) {
+        var arr = [];
+        var ctr = 0;
+        var d;
+
+        if (num1.length != 4) {
+          document.write("Number not of length 4");
+          return;
+        }
+
+        var arr = num1.split("").map(Number);
+        
+
+        if (arr[0] == 0) document.write("First digit is 0 : Not allowed");
+        for (var i = 0; i < 3; i++) {
+          if (arr[i + 1] < arr[i]) {
+            document.write("Digits not in ascending order");
+            return;
+          }
+        }
+        document.write("No error");
+      }
+    </script>
+  </body>
+</html>
