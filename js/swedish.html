@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body onload="translate()">
+  </head>
+  <body onload="translate()">
     <script>
-        function translate()
-        {
-            var lexicon={"merry":"god","christmas":"jul","and":"och","happy":"gott","new":"nytt"}
-            var input=prompt("Enter the string : ").toLowerCase();
-            var output="";
-            input.split(" ").map((value)=>{
-                output=output+lexicon[value]+" ";})
-            document.write(output);
-        }
+      function translate() {
+        var lexicon = {
+          merry: "god",
+          christmas: "jul",
+          and: "och",
+          happy: "gott",
+          new: "nytt",
+        };
+        var input = prompt("Enter the string : ").toLowerCase();
+        var output = "";
+        input.split(" ").map((value) => {
+          output = output + lexicon[value] + " ";
+        });
+        document.write(output);
+      }
     </script>
-    
-</body>
+  </body>
 </html>
