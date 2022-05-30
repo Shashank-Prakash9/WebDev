@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <label> Name </label><input type="text" id="name" /> <label>Age </label
+    ><input type="number" id="age" /> <label>Hometown</label
+    ><input type="text" id="home" />
+    <button onclick="validate()">Check</button>
+    <script>
+      function validate() {
+        var home = document.getElementById("home").value;
+        var name = document.getElementById("name").value;
+        var today = new Date();
+        var age = today.getFullYear() - Number(document.getElementById("age"));
+        document.write(`<h1>${name}</h1>`);
+        document.write(`<h2>Age : ${age}</h2>`);
+        document.write(
+          `<a href="https://www.google.com/maps/search/${home}">Click here</a>`
+        );
+      }
+    </script>
+  </body>
+</html>

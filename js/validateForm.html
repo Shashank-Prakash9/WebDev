@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <label>Name </label><input type="text" id="name" /> <br>
+    <label>Username </label><input type="text" id="username" /><br>
+    <label>Password </label><input type="password" id="pwd"><br>
+    <label>Confirm </label><input type="password" id="cpwd"><br>
+    <label>Year </label><input type="number" id="year"><br>
+    <label>Email </label><input type="email" id="email"><br>
+    <button onclick="validate()">Check</button><br>
+    <input type="checkbox" id="agree">Agree<br>
+    <script>
+        function validate()
+        {
+        var name=document.getElementById("name").value;
+        var username=document.getElementById("username").value;
+        var pwd=document.getElementById("pwd").value;
+        var cpwd=document.getElementById("cpwd").value;
+        var year=document.getElementById("year").value;
+        var email=document.getElementById("email").value;
+        if(pwd!=cpwd)
+        window.alert("Passwords do not match");
+        if(username.length==0||pwd.length==0||cpwd.length==0||year.length==0||email.length==0)
+        window.alert("Invalid Input");
+        if(year.length!=4||Number(year)<=1900||Number(year>=2000))
+        window.alert("Invalid year");
+        var re=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        if(rc.test(email)==false)
+        window.alert("Invalid email")
+        }
+    </script>
+  </body>
+</html>
